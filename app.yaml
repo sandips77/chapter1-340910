@@ -1,0 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: chapter1-340910/javascriptDemo.html  
+  upload: chapter1-340910/javascriptDemo.html
+
+- url: /(.*)
+  static_files: chapter1-340910/\1
+  upload: chapter1-340910/(.*)
